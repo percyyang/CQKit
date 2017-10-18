@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIButton+CQBlock.h"
 #import "SecondViewController.h"
+#import "UIView+CQBlock.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //------- 使用UIView的扩展方法 -------//
+    [self.view cq_whenTapped:^{
+        NSLog(@"单击了view");
+    }];
+    
+    //------- 使用UIButton的扩展方法 -------//
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:button];
     button.frame = CGRectMake(90, 200, 200, 40);

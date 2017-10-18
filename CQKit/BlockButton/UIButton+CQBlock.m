@@ -20,9 +20,9 @@ typedef void(^CQ_ButtonEventsBlock)(void);
 
 @implementation UIButton (CQBlock)
 
-static void *cq_buttonEventsBlockKey = &cq_buttonEventsBlockKey;
-
 //------- 添加属性 -------//
+
+static void *cq_buttonEventsBlockKey = &cq_buttonEventsBlockKey;
 
 - (CQ_ButtonEventsBlock)cq_buttonEventsBlock {
     return objc_getAssociatedObject(self, &cq_buttonEventsBlockKey);
