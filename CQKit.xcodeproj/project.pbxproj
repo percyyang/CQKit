@@ -13,6 +13,8 @@
 		D9806D191F97352E00B4EC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9806D181F97352E00B4EC2D /* Assets.xcassets */; };
 		D9806D1C1F97352E00B4EC2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9806D1A1F97352E00B4EC2D /* LaunchScreen.storyboard */; };
 		D9806D1F1F97352E00B4EC2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9806D1E1F97352E00B4EC2D /* main.m */; };
+		D9806D281F97362500B4EC2D /* UIButton+CQBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D9806D271F97362500B4EC2D /* UIButton+CQBlock.m */; };
+		D9806D2B1F97383800B4EC2D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9806D2A1F97383800B4EC2D /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		D9806D1B1F97352E00B4EC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9806D1D1F97352E00B4EC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9806D1E1F97352E00B4EC2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9806D261F97362500B4EC2D /* UIButton+CQBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CQBlock.h"; sourceTree = "<group>"; };
+		D9806D271F97362500B4EC2D /* UIButton+CQBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CQBlock.m"; sourceTree = "<group>"; };
+		D9806D291F97383800B4EC2D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D9806D2A1F97383800B4EC2D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,13 @@
 		D9806D0E1F97352E00B4EC2D /* CQKit */ = {
 			isa = PBXGroup;
 			children = (
+				D9806D251F97357C00B4EC2D /* BlockButton */,
 				D9806D0F1F97352E00B4EC2D /* AppDelegate.h */,
 				D9806D101F97352E00B4EC2D /* AppDelegate.m */,
 				D9806D121F97352E00B4EC2D /* ViewController.h */,
 				D9806D131F97352E00B4EC2D /* ViewController.m */,
+				D9806D291F97383800B4EC2D /* SecondViewController.h */,
+				D9806D2A1F97383800B4EC2D /* SecondViewController.m */,
 				D9806D151F97352E00B4EC2D /* Main.storyboard */,
 				D9806D181F97352E00B4EC2D /* Assets.xcassets */,
 				D9806D1A1F97352E00B4EC2D /* LaunchScreen.storyboard */,
@@ -69,6 +78,15 @@
 				D9806D1E1F97352E00B4EC2D /* main.m */,
 			);
 			path = CQKit;
+			sourceTree = "<group>";
+		};
+		D9806D251F97357C00B4EC2D /* BlockButton */ = {
+			isa = PBXGroup;
+			children = (
+				D9806D261F97362500B4EC2D /* UIButton+CQBlock.h */,
+				D9806D271F97362500B4EC2D /* UIButton+CQBlock.m */,
+			);
+			path = BlockButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9806D2B1F97383800B4EC2D /* SecondViewController.m in Sources */,
 				D9806D141F97352E00B4EC2D /* ViewController.m in Sources */,
+				D9806D281F97362500B4EC2D /* UIButton+CQBlock.m in Sources */,
 				D9806D1F1F97352E00B4EC2D /* main.m in Sources */,
 				D9806D111F97352E00B4EC2D /* AppDelegate.m in Sources */,
 			);
