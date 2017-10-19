@@ -45,9 +45,7 @@ static void *cq_viewTappedBlockKey = &cq_viewTappedBlockKey;
 
 // 单击view
 - (void)viewTapped {
-    if (self.cq_viewTappedBlock) {
-        self.cq_viewTappedBlock();
-    }
+    !self.cq_viewTappedBlock ?: self.cq_viewTappedBlock();
 }
 
 @end

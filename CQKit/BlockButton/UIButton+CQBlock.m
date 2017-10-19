@@ -45,9 +45,7 @@ static void *cq_buttonEventsBlockKey = &cq_buttonEventsBlockKey;
 
 // 按钮点击
 - (void)cq_blcokButtonClicked {
-    if (self.cq_buttonEventsBlock) {
-        self.cq_buttonEventsBlock();
-    }
+    !self.cq_buttonEventsBlock ?: self.cq_buttonEventsBlock();
 }
 
 @end
